@@ -1,11 +1,8 @@
-import { Metadata } from "next";
-import { BookingModal } from "@/components/booking-modal";
-import { useState } from "react";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Get Catalog – DikhaoNow",
-  description: "Request your personalized digital catalog demo.",
-};
+import { BookingModal } from "@/components/booking-modal";
+import { section } from "framer-motion/client";
+import { useState } from "react";
 
 export default function GetCatalogPage() {
   const [open, setOpen] = useState(false);
@@ -16,7 +13,7 @@ export default function GetCatalogPage() {
         Get Your Digital Catalog
       </h1>
       <p className="mb-8 text-center">
-        Fill out a short form and we’ll create a custom digital catalog for your
+        Fill out a short form and we'll create a custom digital catalog for your
         business.
       </p>
       <div className="flex justify-center">
